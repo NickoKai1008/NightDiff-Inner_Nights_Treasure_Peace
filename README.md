@@ -7,6 +7,7 @@ multimodal GeoAI pipeline for illumination-aware nighttime street-view data synt
 
 <img width="2058" height="516" alt="samples_cfg_scale_9 00_gs-006732_e-000044_b-000000" src="https://github.com/user-attachments/assets/add13e20-f341-45a2-afa0-5e2e60577df1" />
 <img width="2058" height="516" alt="reconstruction_gs-050031_e-000327_b-000000" src="https://github.com/user-attachments/assets/0748e896-0bc1-4c91-bea8-18846509e97c" />
+<img width="4503" height="2218" alt="model2" src="https://github.com/user-attachments/assets/b70a87a7-f97d-4c97-9fd0-3cefcfea8a1f" />
 <img width="3387" height="2174" alt="appendix A2-3" src="https://github.com/user-attachments/assets/1844bd49-ffee-496f-b236-476a2c9d1b96" />
 <img width="2924" height="2071" alt="图片2" src="https://github.com/user-attachments/assets/346b41a9-40b5-4f28-9204-f1a3118a02ab" />
 <img width="5380" height="2239" alt="图片4" src="https://github.com/user-attachments/assets/e6adae37-3be3-469a-ae74-d783cb4c9afa" />
