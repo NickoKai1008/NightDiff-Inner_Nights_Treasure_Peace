@@ -1,0 +1,85 @@
+# NightDiff - Inner Nights Treasure Peace
+# GitHub Pages Jekyll Configuration
+
+# Site Settings
+title: NightDiff - Inner Nights Treasure Peace
+description: Multimodal GeoAI pipeline for illumination-aware nighttime street-view data synthesis and nocturnal auditing
+url: https://nickokai1008.github.io/NightDiff-Inner_Nights_Treasure_Peace
+baseurl: /NightDiff-Inner_Nights_Treasure_Peace
+
+# Theme
+theme: jekyll-theme-slate
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files/folders from site
+exclude:
+  - .gitignore
+  - .git
+  - .github
+  - .gitattributes
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .jekyll-cache/
+  - .sass-cache/
+  - *.gemspec
+
+# SEO Settings
+twitter:
+  username: NickoKai1008
+github:
+  username: NickoKai1008
+
+# Social Settings
+social:
+  name: NickoKai1008
+  links:
+    - https://github.com/NickoKai1008
+
+# Analytics (Optional - uncomment if needed)
+# google_analytics: UA-XXXXXXXX-X
+
+# Author Information
+author:
+  name: NickoKai1008
+  email: your-email@example.com
+  github: NickoKai1008
+
+# Show excerpts on the homepage
+show_excerpts: true
+
+# Pagination (if using jekyll-paginate)
+paginate: 10
+paginate_path: /page:num/
+
+# Timezone
+timezone: UTC
+
+# Collections (Optional)
+collections:
+  data_pipelines:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults (Optional)
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
