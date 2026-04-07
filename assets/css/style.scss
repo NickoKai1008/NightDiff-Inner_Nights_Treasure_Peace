@@ -2,14 +2,174 @@
 ---
 @import "{{ site.theme }}";
 
+/* ========================================
+   强制修复所有图片拉伸问题
+   ======================================== */
+
+/* 全局图片样式 */
 img {
-  max-width: 100%;
+  max-width: 100% !important;
   height: auto !important;
-  display: block;
-  margin: 10px 0;
+  width: auto !important;
+  display: inline-block !important;
+  object-fit: contain !important;
+  object-position: center !important;
 }
 
-main img {
+/* Markdown 生成的段落中的图片 */
+p img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+  display: block !important;
+  margin: 10px auto !important;
+}
+
+/* 表格中的图片 */
+td img, 
+th img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+  display: block !important;
+}
+
+/* 主容器中的图片 */
+main img, 
+article img, 
+.content img,
+.markdown-body img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* 链接中的图片 */
+a img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* 列表中的图片 */
+li img {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* 修复表格布局 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  padding: 8px;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* 修复表格中的图片容器 */
+table td img,
+table th img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* 响应式图片容器 */
+.image-container,
+.img-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.image-container img,
+.img-container img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 修复 GitHub Slate 主题的特定样式 */
+.page-header {
+  padding: 20px 0;
+}
+
+main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 100%;
+}
+
+/* 修复响应式设计 */
+@media (max-width: 768px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  table td,
+  table th {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  table {
+    font-size: 10px;
+  }
+  
+  table td,
+  table th {
+    padding: 2px;
+  }
+}
+
+/* 防止图片溢出 */
+body img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.wrapper img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 修复 Jekyll 生成的特定类 */
+.highlight img,
+.highlighter-rouge img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 额外的强制规则 */
+img[width],
+img[height] {
+  max-width: 100% !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* 修复内联样式 */
+img[style*="width"],
+img[style*="height"] {
   max-width: 100% !important;
   height: auto !important;
   width: auto !important;
